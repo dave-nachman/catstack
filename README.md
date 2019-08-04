@@ -2,6 +2,8 @@
 
 Catstack is a [concatenative-](https://en.wikipedia.org/wiki/Concatenative_programming_language) and [stack-oriented](https://en.wikipedia.org/wiki/Stack-oriented_programming) programming language, inspired by earlier languages such as [Forth](<https://en.wikipedia.org/wiki/Forth_(programming_language)>) and [PostScript](https://en.wikipedia.org/wiki/PostScript).
 
+Catstack is an early, work-in-progress experiment.
+
 It is written in Typescript and has an [interactive, web environment](https://catstack.org)
 
 Catstack is meant to be a simple, toy language, with the goal of helping people explore stack-based programming languages.
