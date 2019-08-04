@@ -6,6 +6,8 @@ Catstack is an early, work-in-progress experiment.
 
 It is written in Typescript and has an [interactive, web environment](https://catstack.org)
 
+## Basics
+
 Catstack is meant to be a simple, toy language, with the goal of helping people explore stack-based programming languages.
 
 As with similar languages, in Catstack a stack is used for passing parameters — literal values are pushed onto a stack and functions pop and/or push values during evaluation.
