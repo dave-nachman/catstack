@@ -4,7 +4,7 @@ Catstack is a [concatenative-](https://en.wikipedia.org/wiki/Concatenative_progr
 
 Catstack is an early, work-in-progress experiment.
 
-It is written in Typescript and has an [interactive, web environment](https://catstack.org)
+It is written in Typescript and has an [interactive, web environment](https://www.catstack.org)
 
 ## Basics
 
