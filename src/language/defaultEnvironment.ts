@@ -228,6 +228,10 @@ export const defaultEnvironment: Environment = {
   first: ({ stack, environment }) => {
     if (stack.length && stack[stack.length - 1].type === "list") {
       const list = stack.pop() as ListToken;
+      if (list.value.length === 0) {
+        throw new Error("Can't call first on empty list");
+      }
+
       const first = list.value[list.value.length - 1];
       return {
         stack: stack.concat([first]),
