@@ -1,0 +1,47 @@
+{
+  "name": "catstack-lang",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "bin": {
+    "catstack": "bin/catstack.js"
+  },
+  "dependencies": {
+    "@tippy.js/react": "^2.2.2",
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.13.4",
+    "@types/parsimmon": "^1.10.0",
+    "@types/react": "^16.8.13",
+    "@types/react-dom": "^16.8.4",
+    "commander": "^2.20.0",
+    "parsimmon": "^1.12.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-ga": "^2.6.0",
+    "react-markdown": "^4.1.0",
+    "react-scripts": "2.1.8",
+    "react-simple-code-editor": "^0.9.14",
+    "react-tippy": "^1.2.3",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.87.3",
+    "terminal-in-react": "^4.3.1",
+    "typescript": "^3.4.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start-cli": "ts-node --project tsconfig-cli.json src/cli/index.ts",
+    "build": "react-scripts build",
+    "build-cli": "rm -rf dist-cli && tsc --build tsconfig-cli.json",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
