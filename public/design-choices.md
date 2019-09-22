@@ -35,3 +35,11 @@ Catstack tries to evaluate a name regardless of whether it points to a list (i.e
 By comparison, some other stack-based languages (e.g. Factor) will evaluate the value if it is a function definition but will push the literal value onto the stack if not.
 
 Catstack doesn't change its behavior depending on whether the value is a list or literal in order to promote simple and consistent rules of evaluation.
+
+### Lexical vs. Dynamic scoping
+
+An important choice for programming languages is whether variable names refer to the environment at the point of definition (*lexical* or *static* scoping) or refer to the environment at the point where the code is run (*dynamic* scoping). Most modern programming languages use lexical scoping, but dynamic scoping is simpler to implement, often common in stack-based languages, and has some advantages for stack-based languages.
+
+Catstack has dynamic scoping by default. For example, if you wrote `[add2] [2 add] def` and then changed the definition of `add`, `add2` would refer to the new definition of `add` if `add2` was invoked, because the value of add is looked up at the time of invocation. 
+
+This has the benefit of creating a simple consistent programming model, but isn't always what the programmer would want. To address this, Catstack lets you introduce a *closure*, where a function definition is associated with a fixed environment. This provides a facility for lexical scoping, because it lets you freeze the environment. E.g. if you wrote `[add2] [2 add] close def`, and then changed the definition of `add`, `add2` would still refer to the prior definition of `add`.
