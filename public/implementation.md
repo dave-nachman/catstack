@@ -18,3 +18,4 @@ export interface Interpreter {
 
 ### Interactive Web environment
 
+Catstack has an interactive web environment that is implemented in TypeScript using React (with hooks), create-react-app, and Semantic UI.
