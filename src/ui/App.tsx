@@ -37,7 +37,7 @@ const App = () => {
   );
 
   return (
-    <div>
+    <div style={{ height: "100%", display: "flex", flexDirection: "column" }}>
       <S.Menu inverted style={{ borderRadius: 0, backgroundColor: brandColor }}>
         <S.Container>
           <S.Menu.Item header>
@@ -59,7 +59,10 @@ const App = () => {
         </S.Container>
       </S.Menu>
 
-      <S.Container fluid style={{ marginTop: "1em", padding: "12px 16px" }}>
+      <S.Container
+        fluid
+        style={{ marginTop: "1em", padding: "12px 16px", flex: 1 }}
+      >
         <S.Tab
           panes={[
             {
