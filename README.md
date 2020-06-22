@@ -127,7 +127,7 @@ By default, Catstack uses _dynamic scoping_ — at evaluation time, functions th
 
 This is different from most modern programming languages, which typically use _lexical scoping_ - whereby variables resolve to their value at time of definition, not evaluation.
 
-While Catstack is dynamically scoped by default, functions can become lexically scope by calling the `close` function, which creates a _closure_ (function definition wrapped with its environment)
+While Catstack is dynamically scoped by default, functions can become lexically scoped by calling the `close` function, which creates a _closure_ (function definition wrapped with its environment)
 
 ```
 > [add-two]
