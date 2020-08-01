@@ -45,7 +45,6 @@ export const Environment = ({ interpreter }: { interpreter: Interpreter }) => {
       </ul>
       <h3>REPL Commands</h3>
       <ul>
-        <li>clear</li>
         <li>undo</li>
         <li>redo</li>
       </ul>
